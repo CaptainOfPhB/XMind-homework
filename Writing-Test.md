@@ -164,7 +164,7 @@ Date: "2022-06-18"
     function computed(getter) {
       return new Proxy({}, {
         get(target, prop) {
-          if(prop = 'value') {
+          if(prop === 'value') {
             return getter()
           }
         }
